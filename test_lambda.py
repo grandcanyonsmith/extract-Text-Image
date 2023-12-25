@@ -10,7 +10,7 @@ def test_lambda_handler():
 
     # Download the image
     response = requests.get(image_url)
-
+    
     # Open the image with PIL
     image = Image.open(BytesIO(response.content))
 
@@ -27,10 +27,10 @@ def test_lambda_handler():
 
     # Extract the text from the body response
     text = result['body']
-
+    
     # Lower case the text
     text = text.lower()
-
+    print(text,'text')
     # Check if 'party' is in the text
     assert 'party' in text, "Test failed: 'party' not found in the response text"
 
