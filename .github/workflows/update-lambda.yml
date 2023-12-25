@@ -2,7 +2,7 @@ name: Update Lambda Function
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   deploy:
