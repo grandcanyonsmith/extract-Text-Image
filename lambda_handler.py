@@ -15,7 +15,7 @@ def process_image(image_binary_data):
     for item in response['Blocks']:
         if item['BlockType'] == 'LINE':
             text += item['Text'] + '\n'
-    
+    print(text,'text')
     return text
 
 def lambda_handler(event, context):
