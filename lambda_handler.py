@@ -67,3 +67,5 @@ def lambda_handler(event, context):
         return {'statusCode': 200, 'body': extracted_text}
     except Exception as e:
         return {'statusCode': 500, 'body': str(e)}
+
+
